@@ -1,4 +1,95 @@
 @import "./base.css";
-.home{
-    background-color: green;
+
+body{
+    font-family: var(--mainfont);
+    background-color: #eee;
 }
+.menu{
+    display:none;
+}
+.header{
+    background-color: #fff;
+    padding:20px 0;
+}
+
+ .header .logo{
+    display:flex;
+    align-items: center;
+    gap:2px;
+ 
+    
+   
+}
+.header .logo img{
+    width:35px;
+}
+.header .logo a{
+    color:var(--maincolor);
+}
+.nav ul{
+    display:flex;
+    gap:16px;
+  
+   
+}
+.active{
+    font-weight: 900;
+}
+
+.nav ul li a{
+    color: #101928;
+}
+.auth{
+    display:flex;
+    gap:10px;
+    align-items:center;
+   
+}
+.auth a{
+border:2px solid var(--maincolor);
+padding: 5.3541765213012695px 30.18113136291504px;
+border-radius: 10px;
+font-family:var(--subfont);
+
+}
+ .auth .login{
+    color:var(--maincolor);
+    font-weight: 700;
+
+}
+ .auth .register{
+    background-color: var(--maincolor);
+    color:#fff;
+
+}
+/*mediia*/
+@media screen and (max-width:992px) {
+    .nav,
+    .auth{
+        display: none;
+    }
+    .menu{
+        display:block;
+       
+    }
+   
+
+
+}
+@media screen and (max-width:576px){
+ .container{
+    width:calc(100% - 120px);
+
+}
+.header .logo img {
+    width:20px;
+}
+
+.header .logo a{
+    font-size:14px;
+}
+
+
+
+}
+
